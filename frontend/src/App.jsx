@@ -1,4 +1,4 @@
-import { useState } from 'react'
+//import { useState } from 'react'
 import React from "react";
 import './App.css'
 import Login from './components/login/Login'
@@ -9,6 +9,10 @@ import { Route, Router, Routes } from 'react-router-dom';
 import AccountCreated from './components/AccountCreated';
 import ChangePassword from './components/ChangePassword';
 import LoginRegisterTransition from './components/login/LoginRegisterTransition';
+import UserProfilePage from './components/UserProfilePage';
+import MyAds from './components/MyAds';
+import EmptyFavoritesPage from "./components/EmptyFavoritesPage";
+
 
 function App() {
   
@@ -17,6 +21,7 @@ function App() {
     <>
       <AccountCreated />
       {/* <ChangePassword /> */}
+      
 
       <Routes>
         <Route
@@ -26,10 +31,14 @@ function App() {
           }
         />
         <Route path="/forgot-password" element={<ForgotPassword />} />
-        Add more routes below as needed
+        <Route path="/my-ads" element={<MyAds />} /> 
+        <Route path="/empty-favorites" element={<EmptyFavoritesPage />} />
+        <Route path="/user-profile-page" element={<UserProfilePage />} />
+        {/* Add more routes below as needed */}
       </Routes>
     </>
+
   );
 }
 
-export default App
+export default App;
