@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import React from 'react';
+import { useState} from 'react';
 import { User, Settings, LogOut, Heart, MessageSquare, Plus } from 'lucide-react';
 
 export default function UserProfilePage() {
