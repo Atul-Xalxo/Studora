@@ -9,14 +9,18 @@ import { Route, Router, Routes } from 'react-router-dom';
 import AccountCreated from './components/AccountCreated';
 import ChangePassword from './components/ChangePassword';
 import LoginRegisterTransition from './components/login/LoginRegisterTransition';
+import Favourites from './components/Favourites';
+import Messages from './components/Messages';
 
 function App() {
   
 
   return (
     <>
-      <AccountCreated />
+      {/* <AccountCreated /> */}
       {/* <ChangePassword /> */}
+      {/* <Favourites /> */}
+      <Messages />
 
       <Routes>
         <Route

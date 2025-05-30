@@ -1,9 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const AccountCreated = () => {
+  const navigate = useNavigate();
   const handleLogin = () => {
-    // Replace with your navigation logic
-    alert("Redirecting to login page");
+   navigate("/login");
   };
 
   return (
